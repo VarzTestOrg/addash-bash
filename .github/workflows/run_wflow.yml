@@ -11,4 +11,4 @@ jobs:
     - name: Use variables
       run: |
         echo "repo variable : ${{ vars.TEST_VAR }}"
-        echo "org variable large : ${{ vars.LARGE_VAR }}"
+        echo "org variable large : ${{ vars.SUPER_LARGE_VAR }}"
