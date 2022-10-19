@@ -10,16 +10,4 @@ jobs:
     steps:        
     - name: Use variables
       run: |
-        echo ""repo variable : ${{ vars.TEST_VAR }}""		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+        echo "repo variable : ${{ vars.TEST_VAR }}"
