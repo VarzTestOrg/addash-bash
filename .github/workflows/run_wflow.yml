@@ -10,6 +10,6 @@ jobs:
     steps:        
     - name: Use variables
       run: |
-        echo "repo variable : ${{ vars.TEST_VAR }}"
+        echo "repo variable : ${{ vars[format('{0}_a', vars.foo)] }}"
         echo "org variable large : ${{ vars.LARGE_VAR }}"
         echo "large variable name test : ${{vars.test_var_name_recursive_test_var_name_recursive_test_var_name_recursive_test_var_name_recursive_test_var_name_recursive_test_var_name_recursive_test_var_name_recursive_test_var_name_recursive_test_var_name_recursive_recursive_test_var_name_recursive_test_var_name_recursive_test_var_name_recursive}}"
